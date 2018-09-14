@@ -9,7 +9,7 @@ k = int(input('What is your k value? '))
 #find distance
 df.loc[:,'dist'] = ((a-df.loc[:,'x_1'])**2)+((b-df.loc[:,'x_2'])**2)
 
-#new dataframe with lowest (k*2)-1 distances
+#new dataframe with lowest (k*2)-1 number of distances
 df1 = df.nsmallest((k*2)-1,'dist')
 
 #classify point by finding majority
