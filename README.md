@@ -9,7 +9,7 @@ b = -0.0071808969876720526
 c = 0.007811730018380093
 
 Problem Set 3:
-K Nearest Neighbour:
-Letting K=2 and with the points (0.8, 0.2), (0.55,02), (0.2, 0.4) we get them classified as 0, 0, 1 respectively.
+k Nearest Neighbour:
+Letting k=2 and with the points (0.8, 0.2), (0.55,02), (0.2, 0.4) we get them classified as 0, 0, 1 respectively.
 
 Decision Trees:
