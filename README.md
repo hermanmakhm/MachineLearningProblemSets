@@ -17,7 +17,7 @@ I used the old titanic_medium dataset here to code a decision tree that is able 
 
 ```mermaid
 graph LR
-A(Female?) -->B(Round edge)
+A[Hard edge] -->B(Round edge)
     B --> C{Decision}
     C -->|One| D[Result one]
     C -->|Two| E[Result two]
