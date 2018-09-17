@@ -16,10 +16,10 @@ df.columns = [0, 1, 2, 3, 4]
 
 print('We let columns 0, 1, 2, 3 be Female, Class1, Class2, Class3, respectively, and label them with 1 = True and 0 = False.')
 
-#initial entropy
+#initial entropy can be calculated as follows
+#this is uneeded, as minimum avg. entropy will always be the maximum info gained
 #a = df.groupby(4)[4].count().tolist()
 #ient = -((a[0]/len(df))*math.log(a[0]/len(df),2)+(a[1]/len(df))*math.log(a[1]/len(df),2))
-#print(ient)
 
 #null array creation
 B = np.zeros((4,4),dtype = np.int16)
@@ -45,12 +45,11 @@ for i in range (0,4):
     FinEnt[1,i] = (-B[2,i]*math.log(B[2,i]/(B[2,i]+B[3,i]),2)-B[3,i]*math.log(B[3,i]/(B[2,i]+B[3,i]),2))/(B[2,i]+B[3,i])
     #average entropy
     AvgEnt[i] = (FinEnt[0,i]+FinEnt[1,i])/2
-    #Info gain is not needed, as the classification with minimum avg. entropy will always be the maximum info gained
 
 #print first "decision" based on {highest info gain}≡{lowest average entropy}
 print('We achieve the most information gain by first splitting column', AvgEnt.argmin())
 
-#second "decision"; begin by setting two new dataframes that separate based on first "decision" and reset dataframe index
+#second "decision"; begin by setting two new dataframes that separate based on first "decision" and reset dataframe indicies
 df1 = df.loc[df[AvgEnt.argmin()] == 0].reset_index(drop=True)
 df2 = df.loc[df[AvgEnt.argmin()] == 1].reset_index(drop=True)
 
