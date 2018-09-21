@@ -18,3 +18,7 @@ I used the old titanic_medium dataset here to code a decision tree. We are able 
 https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiZ3JhcGggVERcbkEoRmVtYWxlPykgLS0-fHl8IEIoQ2xhc3MxPylcbkEgLS0-fG58IEMoQ2xhc3MyPylcbkItLT58eXxEKC4uLilcbkItLT58bnxFKENsYXNzMz8pXG5DLS0-fHl8RiguLi4pXG5DLS0-fG58RyhDbGFzczM_KVxuRS0tPnx5fEgoLi4uKVxuRS0tPnxufEkoQ2xhc3MyKVxuRy0tPnx5fEooLi4uKVxuRy0tPnxufEsoQ2xhc3MxKVxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0
 
 where (...) means an uncalculated probability of the person surviving.
+
+## Problem Set 4:
+### k Means Algorithm
+$k=2$ was chosen due to the result of the elbow graph. An interesting result was that each time the algorithm is run, the $k=3$ graph either splits the section on the left or the right, likely dependent on where the random point started.
