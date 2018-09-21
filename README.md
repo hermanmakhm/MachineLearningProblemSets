@@ -21,4 +21,4 @@ where (...) means an uncalculated probability of the person surviving.
 
 ## Problem Set 4:
 ### k Means Algorithm
-$k=2$ was chosen due to the result of the elbow graph. An interesting result was that each time the algorithm is run, the $k=3$ graph either splits the section on the left or the right, likely dependent on where the random point started.
+k=2 was chosen due to the result of the elbow graph. An interesting result was that each time the algorithm is run, the k=3 graph either splits the section on the left or the right, likely dependent on where the random point started.
